@@ -72,7 +72,6 @@ const Crew = () => {
               className="w-auto h-auto"
               src={data.crew[crew].images.webp}
               alt={data.crew[crew].name}
-              loading="lazy"
             />
           </motion.div>
         </div>
