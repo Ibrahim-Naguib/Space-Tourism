@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body
-        className={`bg-cover min-h-[100vh] lg:bg-auto bg-no-repeat bg-blend-normal
+        className={`bg-cover min-h-[100vh] bg-no-repeat bg-blend-normal
       ${
         pathname === "/destination"
           ? "bg-destMobile md:bg-destTablet lg:bg-destDesktop"
