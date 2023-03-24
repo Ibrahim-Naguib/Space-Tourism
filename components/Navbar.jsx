@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header>
       <nav
-        className={`flex justify-between items-center h-[96px] ml-[24px] relative ${styles.barlow}`}
+        className={`flex justify-between items-center h-[96px] lg:mt-[30px] ml-[24px] relative ${styles.barlow}`}
       >
         <div className="rounded-[50%]">
           <Link href="/">
