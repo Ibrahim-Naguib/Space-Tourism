@@ -30,6 +30,7 @@ const Destination = () => {
               className="w-[170px] h-[170px] sm:w-[300px] sm:h-[300px] lg:w-[445px] lg:h-[445px] sm:mt-[30px] bg-blend-normal"
               src={data.destinations[activePlanet].images.webp}
               alt={data.destinations[activePlanet].name}
+              priority
             />
           </motion.div>
         </div>
