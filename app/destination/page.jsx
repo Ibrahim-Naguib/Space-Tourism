@@ -25,9 +25,9 @@ const Destination = () => {
             initial={{ opacity: 0, scale: 0.9, rotate: 20 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 0.75 }}
+            className="w-[170px] h-[170px] sm:w-[300px] sm:h-[300px] lg:w-[445px] lg:h-[445px] sm:mt-[30px] relative bg-blend-normal"
           >
             <Image
-              className="w-[170px] h-[170px] sm:w-[300px] sm:h-[300px] lg:w-[445px] lg:h-[445px] sm:mt-[30px] bg-blend-normal"
               src={data.destinations[activePlanet].images.webp}
               alt={data.destinations[activePlanet].name}
               priority

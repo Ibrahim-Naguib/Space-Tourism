@@ -69,9 +69,10 @@ const Crew = () => {
             transition={{ duration: 0.75 }}
           >
             <Image
-              className="w-auto h-auto"
               src={data.crew[crew].images.webp}
               alt={data.crew[crew].name}
+              priority
+              fill
             />
           </motion.div>
         </div>
