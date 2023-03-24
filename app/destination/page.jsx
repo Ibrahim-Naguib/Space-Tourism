@@ -31,6 +31,7 @@ const Destination = () => {
               src={data.destinations[activePlanet].images.webp}
               alt={data.destinations[activePlanet].name}
               priority
+              loading="lazy"
             />
           </motion.div>
         </div>

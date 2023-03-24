@@ -73,6 +73,7 @@ const Crew = () => {
               alt={data.crew[crew].name}
               priority
               fill
+              loading="lazy"
             />
           </motion.div>
         </div>
