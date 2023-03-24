@@ -30,13 +30,11 @@ const Technology = () => {
             className="lg:hidden mx-auto"
             src={data.technology[tech].images.landscape}
             alt={data.technology[tech].name}
-            loading="lazy"
           />
           <Image
             className="hidden lg:block"
             src={data.technology[tech].images.portrait}
             alt={data.technology[tech].name}
-            loading="lazy"
           />
         </motion.div>
         <div className="mt-[35px] lg:mt-[100px] lg:order-1 lg:ml-[35px] lg:flex">
