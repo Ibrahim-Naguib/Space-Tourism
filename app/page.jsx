@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className={`${styles.main}`}>
+    <main className={`${styles.main} pb-[35px]`}>
       <div className="mt-[25px] sm:mt-[100px] mx-auto w-[325px] sm:w-[450px]">
         <h5 className={`${styles.h5} ${styles.barlow}`}>
           SO, YOU WANT TO TRAVEL TO
