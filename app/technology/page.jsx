@@ -1,9 +1,9 @@
 "use client";
 import { data } from "@/data";
 import { styles } from "@/styles/styles";
-import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { MyImage } from "@/components";
 
 const Technology = () => {
   const [tech, setTech] = useState(0);
@@ -26,19 +26,17 @@ const Technology = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.75 }}
         >
-          <Image
+          <MyImage
             className="lg:hidden mx-auto"
             src={data.technology[tech].images.landscape}
             alt={data.technology[tech].name}
             priority
-            loading="lazy"
           />
-          <Image
+          <MyImage
             className="hidden lg:block"
             src={data.technology[tech].images.portrait}
             alt={data.technology[tech].name}
             priority
-            loading="lazy"
           />
         </motion.div>
         <div className="mt-[35px] lg:mt-[100px] lg:order-1 lg:ml-[35px] lg:flex">

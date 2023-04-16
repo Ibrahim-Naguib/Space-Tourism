@@ -1,9 +1,9 @@
 "use client";
 import { data } from "@/data";
 import { styles } from "@/styles/styles";
-import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { MyImage } from "@/components";
 
 const Crew = () => {
   const [crew, setCrew] = useState(0);
@@ -68,12 +68,11 @@ const Crew = () => {
             animate={{ opacity: 1, transform: "translateX(0px)" }}
             transition={{ duration: 0.75 }}
           >
-            <Image
+            <MyImage
               src={data.crew[crew].images.webp}
               alt={data.crew[crew].name}
               priority
               fill
-              loading="lazy"
             />
           </motion.div>
         </div>

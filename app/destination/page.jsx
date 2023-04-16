@@ -1,9 +1,9 @@
 "use client";
 import { data } from "@/data";
 import { styles } from "@/styles/styles";
-import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { MyImage } from "@/components";
 
 const Destination = () => {
   const [activePlanet, setActivePlanet] = useState(0);
@@ -27,11 +27,10 @@ const Destination = () => {
             transition={{ duration: 0.75 }}
             className="w-[170px] h-[170px] sm:w-[300px] sm:h-[300px] lg:w-[445px] lg:h-[445px] sm:mt-[30px] relative bg-blend-normal"
           >
-            <Image
+            <MyImage
               src={data.destinations[activePlanet].images.webp}
               alt={data.destinations[activePlanet].name}
               priority
-              loading="lazy"
             />
           </motion.div>
         </div>
